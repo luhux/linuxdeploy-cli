@@ -91,7 +91,7 @@ do_install()
 
     msg "Updating portage tree ... "
     (set -e
-        chroot_exec emerge-websync 
+        chroot_exec emerge-webrsync 
         chroot_exec eselect profile set 1
     exit 0) 1>/dev/null
     is_ok || return 1
